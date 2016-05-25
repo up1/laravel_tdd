@@ -14,7 +14,7 @@ class UserTest extends TestCase{
     public function testCreateNewUserShouldFound(){
       $createdUser = factory(User::class)->create(["name" => "somkiat"]);
 
-      $foundUser = factory(User::class)->findByName('somkiat');
+      $foundUser = User::findByName('somkiat');
 
       $this->assertEquals($createdUser->id, $foundUser->id);
       $this->assertEquals($createdUser->name, $foundUser->name);

@@ -28,4 +28,9 @@ class User extends Authenticatable
     function accounts() {
       return $this->hasMany(Account::class);
     }
+
+
+    static function findByName($name) {
+      return self::where('name', $name)->first();
+    }
 }
