@@ -8,6 +8,8 @@ use App\User;
 
 class ViewBankAccountOfUserTest extends TestCase{
 
+    use DatabaseMigrations;
+
     public function testCreateNewBankAccountByUser(){
       $user = factory(User::class)->create(["name" => "somkiat"]);
 
