@@ -10,7 +10,7 @@ use App\User;
 class UsersController extends Controller
 {
     function show($name) {
-        $user = User::where('name', $name)->first();
+        $user = User::findByName($name);
         return view('users.show', ['user' => $user]);
     }
 }
