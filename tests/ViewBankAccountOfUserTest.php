@@ -5,6 +5,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 use App\User;
+use App\Account;
 
 class ViewBankAccountOfUserTest extends TestCase{
 
