@@ -17,6 +17,6 @@ class ViewBankAccountOfUserTest extends TestCase{
       $newAccount = factory(Account::class)->make(["account_no"=> "12345"]);
       $user->accounts()->save($newAccount);
 
-      $this->visit('/somkiat')->see('Acoount:: 12345');
+      $this->visit('/somkiat')->see('Account:: 12345');
     }
 }
